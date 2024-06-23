@@ -23,7 +23,7 @@ public class SSLContextConfigurator implements HttpClientConfigCallback {
     @Override
     public HttpAsyncClientBuilder customizeHttpClient(HttpAsyncClientBuilder httpClientBuilder) {
         try {
-            Path caPath = Paths.get("/opt/certs/es01/es01.crt");
+            Path caPath = Paths.get("C:\\Users\\abell\\avi-xe\\elastic-oracle-quarkus\\certs\\es01\\es01.crt");
             CertificateFactory factory = CertificateFactory.getInstance("X.509");
             Certificate trustedCa;
             try(InputStream is = Files.newInputStream(caPath)) {
